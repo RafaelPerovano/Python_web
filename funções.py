@@ -20,12 +20,3 @@ def atualizar(tarefas):
     with open('tarefas.txt', 'w') as arquivos:
         for tarefa in tarefas:
             arquivos.write('{}\n'.format(tarefa))
-
-# Função para editar os contatos da agenda
-def editar(tarefa, tarefa_cha):
-    tarefas = receber()
-    tarefas[tarefa] = tarefa_cha
-
-    with open('tarefas.txt', 'w') as arquivos:
-        for tarefa in tarefas():
-            arquivos.write('{}\n'.format(tarefa))
